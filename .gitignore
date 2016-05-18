@@ -1,0 +1,14 @@
+### Mac OSX + Windows ###
+.DS_Store
+Thumbs.db
+
+### Node ###
+.node/
+node_modules/
+npm-debug.log
+
+### Idea ###
+.idea/
+
+### Vim ###
+*.sw[op]

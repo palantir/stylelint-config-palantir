@@ -1,0 +1,29 @@
+{
+  "name": "stylelint-config-palantir",
+  "version": "0.1.0",
+  "description": "stylelint configuration",
+  "main": ".stylelintrc.json",
+  "scripts": {
+    "test": "stylelint test/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:palantir/stylelint-config-palantir.git"
+  },
+  "keywords": [
+    "config",
+    "css",
+    "less",
+    "palantir",
+    "styleguide",
+    "stylelint"
+  ],
+  "author": "Palantir",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "stylelint-config-standard": "7.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "6.4.1"
+  }
+}
