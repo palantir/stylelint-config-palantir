@@ -1,7 +1,6 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    "color-no-hex": true,
     "indentation": 2,
     "font-weight-notation": "numeric",
     "max-line-length": 100,
