@@ -21,7 +21,7 @@
   "author": "Palantir",
   "license": "Apache-2.0",
   "devDependencies": {
-    "stylelint": "6.4.1",
+    "stylelint": "7.0.3",
     "stylelint-config-standard": "11.0.0"
   }
 }
