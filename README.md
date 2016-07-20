@@ -6,8 +6,7 @@
 
 [stylelint](https://github.com/stylelint/stylelint) is the preferred CSS / Less linter.
 
-1. Install `stylelint` and `stylelint-config-standard` as devDependencies (we do not force users to
-install these as dependencies, peer or otherwise, of `stylelint-config-palantir`).
+1. Install a compatible version of `stylelint` (we bundle a compatible version of `stylelint-config-standard`)
 
 2. Configure your `.stylelintrc` to extend the one in this package:
 
