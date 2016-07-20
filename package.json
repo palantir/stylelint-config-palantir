@@ -20,8 +20,13 @@
   ],
   "author": "Palantir",
   "license": "Apache-2.0",
-  "devDependencies": {
-    "stylelint": "7.0.3",
+  "dependencies": {
     "stylelint-config-standard": "11.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "7.0.3"
+  },
+  "peerDependencies": {
+    "stylelint": "^7.0.3"
   }
 }
