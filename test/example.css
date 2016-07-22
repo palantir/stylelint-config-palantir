@@ -2,8 +2,10 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: none;
 }
