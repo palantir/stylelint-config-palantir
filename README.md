@@ -2,17 +2,17 @@
 [![npm version](https://badge.fury.io/js/stylelint-config-palantir.svg)](https://badge.fury.io/js/stylelint-config-palantir)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# Linting CSS & Less
+# Linting CSS
 
-[stylelint](https://github.com/stylelint/stylelint) is the preferred CSS / Less linter.
+[stylelint](https://github.com/stylelint/stylelint) is the preferred CSS / Less / Sass linter.
 
 1. Install a compatible version of `stylelint` (we bundle a compatible version of `stylelint-config-standard`)
 
-2. Configure your `.stylelintrc` to extend the one in this package:
+2. Configure your stylelint configuration file to extend the one in this package:
 
 ```js
 {
-  "extends": "./node_modules/stylelint-config-palantir/.stylelintrc.json",
+  "extends": "stylelint-config-palantir",
   "rules": {
     // Add overrides and additional rules here
   }

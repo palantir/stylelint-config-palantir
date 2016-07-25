@@ -2,7 +2,7 @@
   "name": "stylelint-config-palantir",
   "version": "0.1.0",
   "description": "stylelint configuration",
-  "main": ".stylelintrc.json",
+  "main": "stylelint.config.js",
   "scripts": {
     "test": "stylelint test/*.css"
   },
