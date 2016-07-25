@@ -7,8 +7,9 @@
 const namingPattern = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 module.exports = {
-  "extends": "stylelint-config-standard",
-  "rules": {
+  extends: "stylelint-config-standard",
+  namingPattern,
+  rules: {
     "at-rule-no-unknown": true,
     "at-rule-no-vendor-prefix": true,
     "block-opening-brace-space-before": "always-multi-line",

@@ -4,7 +4,7 @@
   "description": "stylelint configuration",
   "main": "stylelint.config.js",
   "scripts": {
-    "test": "stylelint test/*.css"
+    "test": "stylelint test/*.css && stylelint test/*.scss --config sass.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
   },
   "peerDependencies": {
     "stylelint": "^7.0.3"
+  },
+  "optionalDependencies": {
+    "stylelint-scss": "^1.2.1"
   }
 }
