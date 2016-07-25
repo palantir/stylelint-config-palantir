@@ -15,7 +15,9 @@ module.exports = {
     "color-hex-length": "long",
     "color-named": "never",
     "declaration-block-no-duplicate-properties": true,
-    "declaration-block-properties-order": require("./property-order.js"),
+    "declaration-block-properties-order": [require("./property-order.js"), {
+      unspecified: "bottomAlphabetical",
+    }],
     "declaration-block-semicolon-newline-after": "always",
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "declaration-colon-newline-after": null,
