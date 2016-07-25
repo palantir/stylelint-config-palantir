@@ -9,3 +9,13 @@ html {
   left: 0;
   box-shadow: none;
 }
+
+.flex-box {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 30px;
+  padding: 10px;
+}
