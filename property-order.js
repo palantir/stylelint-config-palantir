@@ -79,6 +79,7 @@ module.exports = [
   "border-bottom-right-radius",
 
   "box-shadow",
+  "box-sizing",
 
   // Content dimensions and background and scrollbars
   "background",
