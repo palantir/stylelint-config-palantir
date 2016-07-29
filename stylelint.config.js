@@ -28,7 +28,7 @@ module.exports = {
     "font-weight-notation": "numeric",
     "function-max-empty-lines": 1,
     "function-url-quotes": "always",
-    "indentation": [2, {
+    "indentation": [4, {
       ignore: ["value"], // so we can align multiline property values
     }],
     "max-empty-lines": 3,
