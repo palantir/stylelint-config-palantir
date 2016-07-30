@@ -1,21 +1,21 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  box-shadow: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: none;
 }
 
 .flex-box {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-between;
 
-  margin: 30px;
-  padding: 10px;
+    margin: 30px;
+    padding: 10px;
 }
