@@ -1,11 +1,11 @@
 .selector {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  top: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
 
-  .nested {
-    @include position(absolute, 0);
-    margin: 30px;
-  }
+    .nested {
+        @include position(absolute, 0);
+        margin: 30px;
+    }
 }
