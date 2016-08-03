@@ -19,3 +19,21 @@ html {
   margin: 30px;
   padding: 10px;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  box-shadow: inset -1px 0 0 #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  width: 250px;
+  padding: 20px;
+}
