@@ -1,3 +1,6 @@
+// Additional configuration for Sass code.
+// Be sure to install `stylelint-scss` for the `scss/*` rules (it's only optional if you're not using Sass).
+
 const namingPattern = require("./stylelint.config.js").namingPattern;
 
 module.exports = {
@@ -29,7 +32,7 @@ module.exports = {
     // "scss/at-mixin-argumentless-call-parentheses": "always", // TODO: coming in next stylelint-scss release
     "scss/at-mixin-pattern": namingPattern,
     "scss/dollar-variable-no-missing-interpolation": true,
-    "scss/dollar-variable-pattern": /(pt-)?(\w+-)*([\w\d]+)/,
+    "scss/dollar-variable-pattern": namingPattern,
     "scss/media-feature-value-dollar-variable": "always",
     "scss/percent-placeholder-pattern": namingPattern,
     "scss/selector-no-redundant-nesting-selector": true,
