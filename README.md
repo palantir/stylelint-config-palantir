@@ -1,44 +1,75 @@
+# stylelint-config-palantir
+
 [![CircleCI](https://circleci.com/gh/palantir/stylelint-config-palantir.svg?style=shield&circle-token=f4447e3c4df0f0edee55b1f1823f07bb43c94604)](https://circleci.com/gh/palantir/stylelint-config-palantir)
 [![npm version](https://badge.fury.io/js/stylelint-config-palantir.svg)](https://badge.fury.io/js/stylelint-config-palantir)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# Linting CSS
+This repository contains Palantir's standard configuration for [Stylelint](https://github.com/stylelint/stylelint), our preferred stylesheet linter. These rules enforce 2-space indentation, comfortable whitespace, and property ordering that mimics the CSS box model. Properly formatted CSS looks like this (blank lines optional):
 
-[stylelint](https://github.com/stylelint/stylelint) is the preferred CSS / Less / Sass linter.
+```css
+.sidebar {
+  display: flex;
+  flex-direction: column;
 
-1. Install a compatible version of `stylelint` (we bundle a compatible version of `stylelint-config-standard`)
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 
-2. Configure your stylelint configuration file to extend this package:
+  box-shadow: inset -1px 0 0 #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
 
-```js
-{
-  "extends": "stylelint-config-palantir",
-  "rules": {
-    // Add overrides and additional rules here
-  }
+  width: 250px;
+  padding: 20px;
 }
 ```
 
-# Linting Sass
+## Usage
 
-1. Install a compatible version of `stylelint` and `stylelint-scss` (we bundle a compatible version of `stylelint-config-standard`)
+1. Install a compatible version of `stylelint` (we express it as a `peerDependency` so you can choose a version that works for you).
+
+  ```
+  npm install --save-dev stylelint stylelint-config-palantir
+  ```
+
+2. Configure your stylelint configuration file to extend this package:
+
+  ```js
+  {
+    "extends": "stylelint-config-palantir",
+    "rules": {
+      // Add overrides and additional rules here
+    }
+  }
+  ```
+
+### Linting Sass
+
+Stylelint works with preprocessor syntaxes such as Sass and Less [out of the box](http://stylelint.io/user-guide/css-processors/) but an additional library and config file are suggested for true linter superpowers.
+
+1. Install a compatible version of `stylelint-scss` which provides a collection of linter rules for Sass syntax.
+  ```
+  npm install --save-dev stylelint-scss
+  ```
 
 2. Configure your stylelint configuration file to _also_ extend `sass.js` in this package.
   This file configures the stylelint-scss rules and updates some existing rules to support Sass syntax.
 
-```js
-{
-  "extends": [
-    "stylelint-config-palantir",
-    "stylelint-config-palantir/sass.js",
-  ],
-  "rules": {
-    // Add overrides and additional rules here
+  ```js
+  {
+    "extends": [
+      "stylelint-config-palantir",
+      "stylelint-config-palantir/sass.js",
+    ],
+    "rules": {
+      // Add overrides and additional rules here
+    }
   }
-}
-```
+  ```
 
-# Customization
+### Customization
 
 We use a `lowercase-single-dashed-names-only` naming pattern for all rules that support a pattern. The regular expression for this pattern is exported as `namingPattern` in the main `stylelint.config.js` file. You can use it in your own rules like so:
 

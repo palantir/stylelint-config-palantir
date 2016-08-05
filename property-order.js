@@ -1,5 +1,8 @@
-// modified concentric CSS ordering to better match {box-sizing: border-box}
+// Modified concentric CSS ordering to better match `box-sizing: border-box`.
 // @see https://github.com/brandon-rhodes/Concentric-CSS/blob/master/style.css
+
+// Also includes "modern" CSS properties such as flexbox and transitions.
+// Any unspecified properties must appear at the end in alphabetical order.
 
 module.exports = [
   // Directions about where and how the box is placed
@@ -99,7 +102,7 @@ module.exports = [
 
   "overflow",
 
-  // (Padding after dimensions because of box-sizing: border-box)
+  // (Padding after dimensions because of `box-sizing: border-box`)
   "padding",
   "padding-top",
   "padding-right",
