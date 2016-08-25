@@ -1,14 +1,14 @@
 "use strict";
 
-// This config file was modified from this file: https://github.com/stylelint/stylelint/blob/master/docs/user-guide/example-config.md
-// Most disabled rules have been removed from the file, instead of commented out.
-
 // lowercase-single-dashed-names-only-0
 const namingPattern = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 module.exports = {
   extends: "stylelint-config-standard",
+
+  // export namingPattern so it can be used in your own rules
   namingPattern,
+
   rules: {
     "at-rule-no-unknown": true,
     "at-rule-no-vendor-prefix": true,
@@ -16,6 +16,7 @@ module.exports = {
     "color-hex-length": "long",
     "color-named": "never",
     "declaration-block-no-duplicate-properties": true,
+    // property order is defined in a separate file for legibility
     "declaration-block-properties-order": [require("./property-order.js"), {
       unspecified: "bottomAlphabetical",
     }],
@@ -29,7 +30,8 @@ module.exports = {
     "function-max-empty-lines": 1,
     "function-url-quotes": "always",
     "indentation": [4, {
-      ignore: ["value"], // so we can align multiline property values
+      // align multiline property values
+      ignore: ["value"],
     }],
     "max-empty-lines": 3,
     "max-line-length": 100,
@@ -50,7 +52,8 @@ module.exports = {
     "selector-class-pattern": namingPattern,
     "selector-id-pattern": namingPattern,
     "selector-max-compound-selectors": 4,
-    "selector-max-specificity": "1,3,3", // "id,class,type"
+    // "id,class,type"
+    "selector-max-specificity": "1,3,3",
     "selector-no-id": true,
     "selector-no-universal": true,
     "selector-no-vendor-prefix": true,
