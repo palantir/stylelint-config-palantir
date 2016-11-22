@@ -1,32 +1,32 @@
 .selector {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  top: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
 
-  .nested {
-    @include position(absolute, 0);
-    margin: 30px;
-  }
+    .nested {
+        @include position(absolute, 0);
+        margin: 30px;
+    }
 }
 
 .kss-sidebar {
-  @include position(absolute, 0 null 0 0);
-  display: flex;
-  flex-direction: column;
-  z-index: $pt-content-z-index;
-  box-shadow: inset -1px 0 0 $pt-divider-black;
-  box-sizing: border-box;
-  background-color: $sidebar-background-color;
-  width: $sidebar-width;
+    @include position(absolute, 0 null 0 0);
+    display: flex;
+    flex-direction: column;
+    z-index: $pt-content-z-index;
+    box-shadow: inset -1px 0 0 $pt-divider-black;
+    box-sizing: border-box;
+    background-color: $sidebar-background-color;
+    width: $sidebar-width;
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
 
-    li {
-      display: block;
+        li {
+            display: block;
+        }
     }
-  }
 }

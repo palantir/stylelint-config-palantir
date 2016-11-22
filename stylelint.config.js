@@ -29,8 +29,9 @@ module.exports = {
     "font-weight-notation": "numeric",
     "function-max-empty-lines": 1,
     "function-url-quotes": "always",
-    "indentation": [2, {
-      ignore: ["value"], // align multiline property values
+    "indentation": [4, {
+      // align multiline property values
+      ignore: ["value"],
     }],
     "max-empty-lines": 3,
     "max-line-length": 100,
@@ -51,7 +52,8 @@ module.exports = {
     "selector-class-pattern": namingPattern,
     "selector-id-pattern": namingPattern,
     "selector-max-compound-selectors": 4,
-    "selector-max-specificity": "1,3,3", // "id,class,type"
+    // "id,class,type"
+    "selector-max-specificity": "1,3,3",
     "selector-no-id": true,
     "selector-no-universal": true,
     "selector-no-vendor-prefix": true,

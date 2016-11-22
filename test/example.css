@@ -1,39 +1,39 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  box-shadow: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: none;
 }
 
 .flex-box {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-between;
 
-  margin: 30px;
-  padding: 10px;
+    margin: 30px;
+    padding: 10px;
 }
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 
-  box-shadow: inset -1px 0 0 #000000;
-  box-sizing: border-box;
-  background-color: #ffffff;
+    box-shadow: inset -1px 0 0 #000000;
+    box-sizing: border-box;
+    background-color: #ffffff;
 
-  width: 250px;
-  padding: 20px;
+    width: 250px;
+    padding: 20px;
 }
