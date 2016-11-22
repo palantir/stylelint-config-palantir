@@ -4,25 +4,25 @@
 [![npm version](https://badge.fury.io/js/stylelint-config-palantir.svg)](https://badge.fury.io/js/stylelint-config-palantir)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This repository contains Palantir's standard configuration for [Stylelint](https://github.com/stylelint/stylelint), our preferred stylesheet linter. These rules enforce 2-space indentation, comfortable whitespace, and property ordering that mimics the CSS box model. Properly formatted CSS looks like this (blank lines optional):
+This repository contains Palantir's standard configuration for [Stylelint](https://github.com/stylelint/stylelint), our preferred stylesheet linter. These rules enforce 4-space indentation, comfortable whitespace, and property ordering that mimics the CSS box model. Properly formatted CSS looks like this (blank lines optional):
 
 ```css
 .sidebar {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 
-  box-shadow: inset -1px 0 0 #000000;
-  box-sizing: border-box;
-  background-color: #ffffff;
+    box-shadow: inset -1px 0 0 #000000;
+    box-sizing: border-box;
+    background-color: #ffffff;
 
-  width: 250px;
-  padding: 20px;
+    width: 250px;
+    padding: 20px;
 }
 ```
 
