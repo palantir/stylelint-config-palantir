@@ -11,7 +11,7 @@ module.exports = {
   "rules": {
     "at-rule-empty-line-before": ["always", {
       except: ["first-nested"],
-      ignore: ["after-comment", "blockless-group"],
+      ignore: ["after-comment", "blockless-after-blockless"],
       // allow @else to come on same line as closing @if brace
       ignoreAtRules: ["else"],
     }],
