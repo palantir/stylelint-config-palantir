@@ -43,7 +43,6 @@ module.exports = {
     "number-no-trailing-zeros": true,
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
-    "root-no-standard-properties": true,
     "rule-nested-empty-line-before": ["always-multi-line", {
       except: ["first-nested"],
       ignore: ["after-comment"],
@@ -57,9 +56,7 @@ module.exports = {
     "selector-no-id": true,
     "selector-no-universal": true,
     "selector-no-vendor-prefix": true,
-    "selector-root-no-composition": true,
     "string-quotes": "double",
-    "stylelint-disable-reason": "always-before",
     "time-min-milliseconds": 100,
     "unit-blacklist": ["pt"],
     "value-keyword-case": "lower",
