@@ -43,7 +43,7 @@ module.exports = {
     "number-no-trailing-zeros": true,
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
-    "rule-nested-empty-line-before": ["always-multi-line", {
+    "rule-empty-line-before": ["always-multi-line", {
       except: ["first-nested"],
       ignore: ["after-comment"],
     }],
