@@ -24,6 +24,9 @@ module.exports = {
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "declaration-colon-newline-after": null,
     "declaration-colon-space-after": "always",
+    "declaration-empty-line-before": ["never", {
+      ignore: ["after-declaration"],
+    }],
     "declaration-no-important": true,
     "font-family-name-quotes": "always-unless-keyword",
     "font-weight-notation": "numeric",
