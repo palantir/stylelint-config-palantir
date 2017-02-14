@@ -9,6 +9,11 @@ module.exports = {
   // export namingPattern so it can be used in your own rules
   namingPattern,
 
+  plugins: [
+    // this is an optionalDependency in NPM
+    "stylelint-order",
+  ],
+
   rules: {
     "at-rule-no-unknown": true,
     "at-rule-no-vendor-prefix": true,
@@ -16,10 +21,6 @@ module.exports = {
     "color-hex-length": "long",
     "color-named": "never",
     "declaration-block-no-duplicate-properties": true,
-    // property order is defined in a separate file for legibility
-    "declaration-block-properties-order": [require("./property-order.js"), {
-      unspecified: "bottomAlphabetical",
-    }],
     "declaration-block-semicolon-newline-after": "always",
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "declaration-colon-newline-after": null,
@@ -65,5 +66,18 @@ module.exports = {
     "value-keyword-case": "lower",
     "value-list-comma-newline-before": "never-multi-line",
     "value-no-vendor-prefix": true,
+    "order/declaration-block-order": [[
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "rules",
+      "at-rules",
+    ], {
+      unspecified: "bottom"
+    }],
+    // property order is defined in a separate file for legibility
+    "order/declaration-block-properties-specified-order": [require("./property-order.js"), {
+      unspecified: "bottomAlphabetical",
+    }],
   },
 };
