@@ -23,14 +23,14 @@
   "author": "Palantir",
   "license": "Apache-2.0",
   "dependencies": {
-    "stylelint-config-standard": "11.0.0"
+    "stylelint-config-standard": "16.0.0"
   },
   "devDependencies": {
-    "stylelint": "7.0.3",
+    "stylelint": "7.8.0",
     "stylelint-scss": "1.2.1"
   },
   "peerDependencies": {
-    "stylelint": "^7.0.3"
+    "stylelint": "^7.8.0"
   },
   "optionalDependencies": {
     "stylelint-scss": "^1.2.1"
