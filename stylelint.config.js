@@ -60,7 +60,7 @@ module.exports = {
     "selector-root-no-composition": true,
     "string-quotes": "double",
     "stylelint-disable-reason": "always-before",
-    "time-no-imperceptible": true,
+    "time-min-milliseconds": 100,
     "unit-blacklist": ["pt"],
     "value-keyword-case": "lower",
     "value-list-comma-newline-before": "never-multi-line",
