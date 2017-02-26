@@ -10,7 +10,6 @@ module.exports = {
   namingPattern,
 
   plugins: [
-    // this is an optionalDependency in NPM
     "stylelint-order",
   ],
 
