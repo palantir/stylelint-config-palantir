@@ -9,6 +9,10 @@ module.exports = {
   // export namingPattern so it can be used in your own rules
   namingPattern,
 
+  plugins: [
+    "stylelint-order",
+  ],
+
   rules: {
     "at-rule-no-unknown": true,
     "at-rule-no-vendor-prefix": true,
@@ -16,14 +20,13 @@ module.exports = {
     "color-hex-length": "long",
     "color-named": "never",
     "declaration-block-no-duplicate-properties": true,
-    // property order is defined in a separate file for legibility
-    "declaration-block-properties-order": [require("./property-order.js"), {
-      unspecified: "bottomAlphabetical",
-    }],
     "declaration-block-semicolon-newline-after": "always",
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "declaration-colon-newline-after": null,
     "declaration-colon-space-after": "always",
+    "declaration-empty-line-before": ["never", {
+      ignore: ["after-declaration"],
+    }],
     "declaration-no-important": true,
     "font-family-name-quotes": "always-unless-keyword",
     "font-weight-notation": "numeric",
@@ -43,8 +46,7 @@ module.exports = {
     "number-no-trailing-zeros": true,
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
-    "root-no-standard-properties": true,
-    "rule-nested-empty-line-before": ["always-multi-line", {
+    "rule-empty-line-before": ["always-multi-line", {
       except: ["first-nested"],
       ignore: ["after-comment"],
     }],
@@ -57,13 +59,24 @@ module.exports = {
     "selector-no-id": true,
     "selector-no-universal": true,
     "selector-no-vendor-prefix": true,
-    "selector-root-no-composition": true,
     "string-quotes": "double",
-    "stylelint-disable-reason": "always-before",
-    "time-no-imperceptible": true,
+    "time-min-milliseconds": 100,
     "unit-blacklist": ["pt"],
     "value-keyword-case": "lower",
     "value-list-comma-newline-before": "never-multi-line",
     "value-no-vendor-prefix": true,
+    "order/declaration-block-order": [[
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "rules",
+      "at-rules",
+    ], {
+      unspecified: "bottom"
+    }],
+    // property order is defined in a separate file for legibility
+    "order/declaration-block-properties-specified-order": [require("./property-order.js"), {
+      unspecified: "bottomAlphabetical",
+    }],
   },
 };

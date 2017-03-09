@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    animation: 100ms;
+}
+
 .overlay {
     position: absolute;
     top: 0;
