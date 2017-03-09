@@ -10,10 +10,10 @@ module.exports = {
   ],
   "rules": {
     "at-rule-empty-line-before": ["always", {
-      except: ["first-nested"],
-      ignore: ["after-comment", "blockless-after-blockless"],
+      except: ["blockless-after-blockless", "first-nested"],
+      ignore: ["after-comment"],
       // allow @else to come on same line as closing @if brace
-      ignoreAtRules: ["else"],
+      ignoreAtRules: ["import", "else"],
     }],
     "at-rule-no-unknown": [true, {
       ignoreAtRules: [

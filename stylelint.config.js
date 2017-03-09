@@ -65,18 +65,25 @@ module.exports = {
     "value-keyword-case": "lower",
     "value-list-comma-newline-before": "never-multi-line",
     "value-no-vendor-prefix": true,
-    "order/declaration-block-order": [[
-      "custom-properties",
-      "dollar-variables",
-      "declarations",
-      "rules",
-      "at-rules",
-    ], {
-      unspecified: "bottom"
-    }],
+    "order/declaration-block-order": [
+      [
+        "custom-properties",
+        "at-variables",
+        "dollar-variables",
+        "less-mixins",
+        {
+          "type": "at-rule",
+          "name": "include"
+        },
+        "declarations",
+        "rules",
+      ],
+      { unspecified: "ignore" }
+    ]
     // property order is defined in a separate file for legibility
-    "order/declaration-block-properties-specified-order": [require("./property-order.js"), {
-      unspecified: "bottomAlphabetical",
-    }],
+    "order/declaration-block-properties-specified-order": [
+      require("./property-order.js"),
+      { unspecified: "bottomAlphabetical" }
+    ],
   },
 };
