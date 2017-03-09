@@ -79,7 +79,7 @@ module.exports = {
         "rules",
       ],
       { unspecified: "ignore" }
-    ]
+    ],
     // property order is defined in a separate file for legibility
     "order/declaration-block-properties-specified-order": [
       require("./property-order.js"),
