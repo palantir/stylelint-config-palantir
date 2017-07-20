@@ -56,8 +56,8 @@ module.exports = {
     "selector-max-compound-selectors": 4,
     // "id,class,type"
     "selector-max-specificity": "1,3,3",
-    "selector-no-id": true,
-    "selector-no-universal": true,
+    "selector-max-id": 0,
+    "selector-max-universal": 0,
     "selector-no-vendor-prefix": true,
     "string-quotes": "double",
     "time-min-milliseconds": 100,
