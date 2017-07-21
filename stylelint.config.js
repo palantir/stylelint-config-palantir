@@ -57,7 +57,7 @@ module.exports = {
     // "id,class,type"
     "selector-max-specificity": "1,3,3",
     "selector-max-id": 0,
-    "selector-max-universal": 1,
+    "selector-max-universal": 0,
     "selector-no-vendor-prefix": true,
     "string-quotes": "double",
     "time-min-milliseconds": 100,
