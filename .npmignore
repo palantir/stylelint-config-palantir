@@ -2,8 +2,10 @@
 Thumbs.db
 .git/
 .node/
+.npmrc
 node_modules/
 npm-debug.log
+package-lock.json
 yarn.lock
 *.sw[op]
 *.un~
