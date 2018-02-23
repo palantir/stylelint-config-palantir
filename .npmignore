@@ -10,4 +10,5 @@ yarn.lock
 *.sw[op]
 *.un~
 test/
-circle.yml
+.circleci/
+scripts/
