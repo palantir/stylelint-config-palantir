@@ -1,0 +1,66 @@
+version: 2
+jobs:
+  install-dependencies:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependency-cache-{{ checksum "yarn.lock" }}
+            - v1-dependency-cache-
+      - run: yarn
+      - run: echo "Checking if lockfiles changed..." && git diff --exit-code
+      - save_cache:
+          key: v1-dependency-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - persist_to_workspace:
+          root: '.'
+          paths:
+            - yarn.lock
+
+  verify:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - attach_workspace:
+          at: '.'
+      - restore_cache:
+          keys:
+            - v1-dependency-cache-{{ checksum "yarn.lock" }}
+            - v1-dependency-cache-
+      - run: yarn test
+
+  deploy-npm:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - attach_workspace:
+          at: '.'
+      - restore_cache:
+          key: v1-dependency-cache-{{ checksum "yarn.lock" }}
+      - run: ./scripts/circle-publish-npm
+
+workflows:
+  version: 2
+  verify_deploy:
+    jobs:
+      - install-dependencies:
+          filters:
+            tags:
+              only: /.*/
+      - verify:
+          requires: [install-dependencies]
+          filters:
+            tags:
+              only: /.*/
+      - deploy-npm:
+          requires: [verify]
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: /.*/

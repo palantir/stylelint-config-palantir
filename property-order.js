@@ -1,3 +1,8 @@
+/**
+ * Copyright 2017-present Palantir Technologies
+ * @license Apache-2.0
+ */
+
 // Modified concentric CSS ordering to better match `box-sizing: border-box`.
 // @see https://github.com/brandon-rhodes/Concentric-CSS/blob/master/style.css
 
