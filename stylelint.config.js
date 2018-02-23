@@ -70,7 +70,7 @@ module.exports = {
     "value-keyword-case": "lower",
     "value-list-comma-newline-before": "never-multi-line",
     "value-no-vendor-prefix": true,
-    "order/declaration-block-order": [
+    "order/order": [
       [
         "custom-properties",
         "at-variables",
@@ -86,7 +86,7 @@ module.exports = {
       { unspecified: "ignore" }
     ],
     // property order is defined in a separate file for legibility
-    "order/declaration-block-properties-specified-order": [
+    "order/properties-order": [
       require("./property-order.js"),
       { unspecified: "bottomAlphabetical" }
     ],
