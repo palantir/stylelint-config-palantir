@@ -1,3 +1,8 @@
+/**
+ * Copyright 2017-present Palantir Technologies
+ * @license Apache-2.0
+ */
+
 "use strict";
 
 // lowercase-single-dashed-names-only-0

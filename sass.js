@@ -1,3 +1,8 @@
+/**
+ * Copyright 2017-present Palantir Technologies
+ * @license Apache-2.0
+ */
+
 // Additional configuration for Sass code.
 // Be sure to install `stylelint-scss` for the `scss/*` rules (it's only optional if you're not using Sass).
 
@@ -5,7 +10,6 @@ const namingPattern = require("./stylelint.config.js").namingPattern;
 
 module.exports = {
   "plugins": [
-    // this is an optionalDependency in NPM
     "stylelint-scss",
   ],
   "rules": {
