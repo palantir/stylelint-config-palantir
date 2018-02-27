@@ -45,6 +45,7 @@ module.exports = {
     "max-line-length": 100,
     "max-nesting-depth": 4,
     "media-feature-name-no-vendor-prefix": true,
+    "no-descending-specificity": null,
     "no-duplicate-selectors": true,
     "no-unknown-animations": true,
     "number-max-precision": 8,
