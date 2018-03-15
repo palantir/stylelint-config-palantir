@@ -91,10 +91,11 @@ module.exports = [
 
   // Content dimensions and background and scrollbars
   "background",
+  "background-clip",
   "background-color",
   "background-image",
-  "background-repeat",
   "background-position",
+  "background-repeat",
   "background-size",
   "cursor",
 
