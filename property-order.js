@@ -91,10 +91,11 @@ module.exports = [
 
   // Content dimensions and background and scrollbars
   "background",
+  "background-clip",
   "background-color",
   "background-image",
-  "background-repeat",
   "background-position",
+  "background-repeat",
   "background-size",
   "cursor",
 
@@ -106,6 +107,8 @@ module.exports = [
   "max-height",
 
   "overflow",
+  "overflow-x",
+  "overflow-y",
 
   // (Padding after dimensions because of `box-sizing: border-box`)
   "padding",
