@@ -106,6 +106,8 @@ module.exports = [
   "max-height",
 
   "overflow",
+  "overflow-x",
+  "overflow-y",
 
   // (Padding after dimensions because of `box-sizing: border-box`)
   "padding",
