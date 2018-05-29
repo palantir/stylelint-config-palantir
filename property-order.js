@@ -13,6 +13,18 @@ module.exports = [
   // Directions about where and how the box is placed
   "display",
 
+  "grid",
+  "grid-auto-flow",
+  "grid-auto-columns",
+  "grid-auto-rows",
+  "grid-gap",
+  "grid-column-gap",
+  "grid-row-gap",
+  "grid-template",
+  "grid-template-areas",
+  "grid-template-columns",
+  "grid-template-rows",
+
   "flex",
   "flex-basis",
   "flex-direction",
