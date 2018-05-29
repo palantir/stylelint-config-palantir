@@ -6,7 +6,7 @@
 "use strict";
 
 // lowercase-single-dashed-names-only-0
-const namingPattern = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+const namingPattern = /^-?[a-z0-9]+(-[a-z0-9]+)*$/;
 
 module.exports = {
   extends: "stylelint-config-standard",
