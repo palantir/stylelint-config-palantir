@@ -41,6 +41,7 @@ module.exports = {
       // align multiline property values
       ignore: ["value"],
     }],
+    "length-zero-no-unit": true,
     "max-empty-lines": 3,
     "max-line-length": 100,
     "max-nesting-depth": 4,
