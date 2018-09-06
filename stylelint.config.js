@@ -66,6 +66,10 @@ module.exports = {
     "selector-max-id": 0,
     "selector-max-universal": 0,
     "selector-no-vendor-prefix": true,
+    "selector-pseudo-class-no-unknown": [true, {
+      // :global is used by css modules
+      "ignorePseudoClasses": ["global"]
+    }],
     "string-quotes": "double",
     "time-min-milliseconds": 100,
     "unit-blacklist": ["pt"],
