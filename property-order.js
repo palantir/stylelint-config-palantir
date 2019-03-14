@@ -14,6 +14,7 @@ module.exports = [
   "display",
 
   "grid",
+  "grid-area",
   "grid-auto-flow",
   "grid-auto-columns",
   "grid-auto-rows",
