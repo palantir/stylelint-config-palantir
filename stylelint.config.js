@@ -25,10 +25,10 @@ module.exports = {
     "color-hex-length": "long",
     "color-named": "never",
     "declaration-block-no-duplicate-properties": true,
-    "declaration-block-semicolon-newline-after": "always-single-line",
+    "declaration-block-semicolon-newline-after": "always",
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "declaration-colon-newline-after": null,
-    "declaration-colon-space-after": "always",
+    "declaration-colon-space-after": "always-single-line",
     "declaration-empty-line-before": ["never", {
       ignore: ["after-declaration"],
     }],
