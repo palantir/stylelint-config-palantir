@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-palantir",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "stylelint configuration",
   "main": "stylelint.config.js",
   "scripts": {
