@@ -7,37 +7,33 @@ a {
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
     box-shadow: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .flex-box {
+    align-items: center;
     display: flex;
     flex: 1 1 auto;
-    align-items: center;
     justify-content: space-between;
-
     margin: 30px;
     padding: 10px;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
-
-    position: absolute;
-    top: 0;
+    background-color: #ffffff;
     bottom: 0;
-    left: 0;
-    z-index: 1;
-
     box-shadow: inset -1px 0 0 #000000;
     box-sizing: border-box;
-    background-color: #ffffff;
-
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    left: 0;
     padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    z-index: 1;
 }
