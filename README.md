@@ -79,35 +79,6 @@ const { namingPattern } = require("stylelint-config-palantir");
 
 ### FAQ
 
-__What's up with property ordering? It seems random.__
+__How do I order my CSS properties in a declaration block?__
 
-We use a modified version of [Concentric CSS](http://rhodesmill.org/brandon/2011/concentric-css/). The basic template looks like this:
-
-```css
-{
-    display: ;    /* Where and how the box is placed */
-    position: ;
-    float: ;
-    clear: ;
-
-    visibility: ; /* Can the box be seen? */
-    opacity: ;
-    z-index: ;
-
-    margin: ;     /* Layers of the box model */
-    outline: ;
-    border: ;
-    background: ;
-    padding: ;
-
-    width: ;      /* Content dimensions and scrollbars */
-    height: ;
-    overflow: ;
-
-    color: ;      /* Text */
-    text: ;
-    font: ;
-}
-```
-
-For a full specification, check out [`property-order.js`](https://github.com/palantir/stylelint-config-palantir/blob/master/property-order.js) in this package.
+We use alphabetical ordering enforced by [stylelint-order](https://github.com/hudochenkov/stylelint-order/blob/master/rules/properties-alphabetical-order/README.md).

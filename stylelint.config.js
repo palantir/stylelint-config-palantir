@@ -91,10 +91,6 @@ module.exports = {
       ],
       { unspecified: "ignore" }
     ],
-    // property order is defined in a separate file for legibility
-    "order/properties-order": [
-      require("./property-order.js"),
-      { unspecified: "bottomAlphabetical" }
-    ],
+    "order/properties-alphabetical-order": true,
   },
 };
