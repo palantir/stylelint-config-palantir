@@ -35,6 +35,7 @@ module.exports = {
     "scss/at-import-partial-extension-blacklist": ["scss"],
     // "scss/at-mixin-argumentless-call-parentheses": "always", // TODO: coming in next stylelint-scss release
     "scss/at-mixin-pattern": namingPattern,
+    "scss/dollar-variable-colon-space-after": "always-single-line",
     "scss/dollar-variable-no-missing-interpolation": true,
     "scss/dollar-variable-pattern": namingPattern,
     "scss/media-feature-value-dollar-variable": "always",
