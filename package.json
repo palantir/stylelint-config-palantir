@@ -7,18 +7,30 @@
     "test": "stylelint test/*.css && stylelint test/*.scss --config sass.js"
   },
   "dependencies": {
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.0.0"
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.3.2"
+    "postcss": "^8.4.5",
+    "postcss-scss": "^4.0.2",
+    "stylelint": "^14.2.0"
+  },
+  "peerDependenciesMeta": {
+    "postcss": {
+        "optional": true
+    },
+    "postcss-scss": {
+      "optional": true
+    }
   },
   "optionalDependencies": {
-    "stylelint-scss": "^3.16.1"
+    "stylelint-scss": "^4.1.0"
   },
   "devDependencies": {
-    "stylelint": "^13.3.2",
-    "stylelint-scss": "^3.16.1"
+    "postcss": "^8.4.5",
+    "postcss-scss": "^4.0.2",
+    "stylelint": "^14.2.0",
+    "stylelint-scss": "^4.1.0"
   },
   "author": "Palantir",
   "license": "Apache-2.0",
