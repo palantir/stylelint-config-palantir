@@ -11,11 +11,20 @@
     "stylelint-order": "^5.0.0"
   },
   "peerDependencies": {
+    "postcss": "^8.4.5",
+    "postcss-scss": "^4.0.2",
     "stylelint": "^14.2.0"
   },
+  "peerDependenciesMeta": {
+    "postcss": {
+        "optional": true
+    },
+    "postcss-scss": {
+      "optional": true
+    }
+  },
   "optionalDependencies": {
-    "stylelint-scss": "^4.1.0",
-    "postcss-scss": "^4.0.2"
+    "stylelint-scss": "^4.1.0"
   },
   "devDependencies": {
     "postcss": "^8.4.5",
