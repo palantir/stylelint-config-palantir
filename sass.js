@@ -23,7 +23,7 @@ module.exports = {
     "at-rule-no-unknown": [true, {
       ignoreAtRules: [
         // additional scss at-rules:
-        "content", "each", "else", "error", "extend", "for", "function", "if", "include", "mixin", "return",
+        "content", "each", "else", "error", "extend", "for", "function", "if", "include", "mixin", "return", "use",
       ],
     }],
     "block-closing-brace-newline-after": ["always", {
