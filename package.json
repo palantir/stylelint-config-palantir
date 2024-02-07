@@ -3,6 +3,7 @@
   "version": "6.0.1",
   "description": "stylelint configuration",
   "main": "stylelint.config.js",
+  "packageManager": "yarn@4.1.0",
   "scripts": {
     "test": "stylelint test/*.css && stylelint test/*.scss --config sass.js"
   },
@@ -17,7 +18,7 @@
   },
   "peerDependenciesMeta": {
     "postcss": {
-        "optional": true
+      "optional": true
     },
     "postcss-scss": {
       "optional": true
