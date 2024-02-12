@@ -24,7 +24,6 @@ module.exports = {
     "color-hex-length": "long",
     "color-named": "never",
     "declaration-block-no-duplicate-properties": true,
-    "declaration-colon-newline-after": null,
     "declaration-empty-line-before": ["never", {
       ignore: ["after-declaration"],
     }],
