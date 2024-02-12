@@ -21,36 +21,23 @@ module.exports = {
   rules: {
     "at-rule-no-unknown": true,
     "at-rule-no-vendor-prefix": true,
-    "block-opening-brace-space-before": "always-multi-line",
     "color-hex-length": "long",
     "color-named": "never",
     "declaration-block-no-duplicate-properties": true,
-    "declaration-block-semicolon-newline-after": "always",
-    "declaration-block-semicolon-newline-before": "never-multi-line",
-    "declaration-colon-newline-after": null,
-    "declaration-colon-space-after": "always-single-line",
     "declaration-empty-line-before": ["never", {
       ignore: ["after-declaration"],
     }],
     "declaration-no-important": true,
     "font-family-name-quotes": "always-unless-keyword",
     "font-weight-notation": "numeric",
-    "function-max-empty-lines": 1,
     "function-url-quotes": "always",
-    "indentation": [4, {
-      // align multiline property values
-      ignore: ["value"],
-    }],
     "length-zero-no-unit": true,
-    "max-empty-lines": 3,
-    "max-line-length": 100,
     "max-nesting-depth": 4,
     "media-feature-name-no-vendor-prefix": true,
     "no-descending-specificity": null,
     "no-duplicate-selectors": true,
     "no-unknown-animations": true,
     "number-max-precision": 8,
-    "number-no-trailing-zeros": true,
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
     "rule-empty-line-before": ["always-multi-line", {
@@ -70,11 +57,9 @@ module.exports = {
       // :global and :export are used by css modules
       "ignorePseudoClasses": ["global", "export"]
     }],
-    "string-quotes": "double",
     "time-min-milliseconds": 100,
     "unit-disallowed-list": ["pt"],
     "value-keyword-case": "lower",
-    "value-list-comma-newline-before": "never-multi-line",
     "value-no-vendor-prefix": true,
     "order/order": [
       [
