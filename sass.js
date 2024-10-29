@@ -26,10 +26,6 @@ module.exports = {
         "content", "each", "else", "error", "extend", "for", "function", "if", "include", "mixin", "return", "use",
       ],
     }],
-    "block-closing-brace-newline-after": ["always", {
-      // allow @else to come on same line as closing @if brace
-      ignoreAtRules: ["else", "if"],
-    }],
     "scss/at-extend-no-missing-placeholder": true,
     "scss/at-function-pattern": namingPattern,
     "scss/at-import-no-partial-leading-underscore": true,
