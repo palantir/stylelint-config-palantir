@@ -38,7 +38,9 @@ module.exports = {
     "no-duplicate-selectors": true,
     "no-unknown-animations": true,
     "number-max-precision": 8,
-    "property-no-unknown": true,
+    "property-no-unknown": [true, {
+      "ignoreSelectors": [":export"]
+    }],
     "property-no-vendor-prefix": true,
     "rule-empty-line-before": ["always-multi-line", {
       except: ["first-nested"],
