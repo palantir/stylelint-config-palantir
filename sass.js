@@ -26,6 +26,9 @@ module.exports = {
         "content", "each", "else", "error", "extend", "for", "function", "if", "include", "mixin", "return", "use",
       ],
     }],
+    // We don't want stylelint to flag `@import "mixins"` since that's not equivalent
+    // to `@import url("mixins")` in Sass.
+    "import-notation": null,
     "scss/at-extend-no-missing-placeholder": true,
     "scss/at-function-pattern": namingPattern,
     "scss/at-import-no-partial-leading-underscore": true,
