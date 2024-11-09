@@ -31,9 +31,9 @@ module.exports = {
     "import-notation": null,
     "scss/at-extend-no-missing-placeholder": true,
     "scss/at-function-pattern": namingPattern,
-    "scss/at-import-no-partial-leading-underscore": true,
-    "scss/at-import-partial-extension-blacklist": ["scss"],
     // "scss/at-mixin-argumentless-call-parentheses": "always", // TODO: coming in next stylelint-scss release
+    "scss/load-no-partial-leading-underscore": true,
+    "scss/at-import-partial-extension-disallowed-list": ["scss"],
     "scss/at-mixin-pattern": namingPattern,
     "scss/dollar-variable-no-missing-interpolation": true,
     "scss/dollar-variable-pattern": namingPattern,
