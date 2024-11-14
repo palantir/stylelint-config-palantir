@@ -80,7 +80,7 @@ const { namingPattern } = require("stylelint-config-palantir");
 ### Maintenance
 
 To release this package:
-1. Bump the version in `package.json`.
+1. Bump the version in `package.json` by opening a new PR to the `master` branch.
 1. Click on the `Releases` link at the top of the repository's homepage.
 1. Click on the "Draft a new release button".
 1. Create a new tag matching the version in `package.json`.
