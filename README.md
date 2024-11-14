@@ -1,7 +1,3 @@
-<p align="right">
-<a href="https://autorelease.general.dmz.palantir.tech/palantir/stylelint-config-palantir"><img src="https://img.shields.io/badge/Perform%20an-Autorelease-success.svg" alt="Autorelease"></a>
-</p>
-
 # stylelint-config-palantir
 
 [![CircleCI](https://circleci.com/gh/palantir/stylelint-config-palantir.svg?style=shield&circle-token=f4447e3c4df0f0edee55b1f1823f07bb43c94604)](https://circleci.com/gh/palantir/stylelint-config-palantir)
@@ -80,6 +76,17 @@ We use a `lowercase-single-dashed-names-only` naming pattern for all rules that 
 ```js
 const { namingPattern } = require("stylelint-config-palantir");
 ```
+
+### Maintenance
+
+To release this package:
+1. Bump the version in `package.json`.
+1. Click on the `Releases` link at the top of the repository's homepage.
+1. Click on the "Draft a new release button".
+1. Create a new tag matching the version in `package.json`.
+1. Click on "Generate release notes" to list the latest commits that will be part of the release.
+1. Check the "Set as the latest release" checkbox.
+1. Publish the release.
 
 ### FAQ
 
