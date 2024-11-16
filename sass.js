@@ -26,9 +26,6 @@ module.exports = {
         "content", "each", "else", "error", "extend", "for", "function", "if", "include", "mixin", "return", "use",
       ],
     }],
-    // We don't want stylelint to flag `@import "mixins"` since that's not equivalent
-    // to `@import url("mixins")` in Sass.
-    "import-notation": null,
     "scss/at-extend-no-missing-placeholder": true,
     "scss/at-function-pattern": namingPattern,
     "scss/load-no-partial-leading-underscore": true,
@@ -40,5 +37,14 @@ module.exports = {
     "scss/media-feature-value-dollar-variable": "always",
     "scss/percent-placeholder-pattern": namingPattern,
     "scss/selector-no-redundant-nesting-selector": true,
+
+    // The rules below aren't exactly appropriate for LESS/SCSS. Following the stylelint-config-recommended-scss config,
+    // we disable them.
+    "annotation-no-unknown": null,
+    "at-rule-no-unknown": null,
+    "comment-no-empty": null,
+    "function-no-unknown": null,
+    "import-notation": null,
+    "media-query-no-invalid": null,
   },
 }
