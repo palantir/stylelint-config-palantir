@@ -32,6 +32,7 @@ module.exports = {
     "scss/at-import-partial-extension-disallowed-list": ["scss"],
     "scss/at-mixin-argumentless-call-parentheses": "never",
     "scss/at-mixin-pattern": namingPattern,
+    "scss/dollar-variable-colon-space-after": "always-single-line",
     "scss/dollar-variable-no-missing-interpolation": true,
     "scss/dollar-variable-pattern": namingPattern,
     "scss/media-feature-value-dollar-variable": "always",
