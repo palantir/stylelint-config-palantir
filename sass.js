@@ -12,7 +12,12 @@ module.exports = {
   "plugins": [
     "stylelint-scss",
   ],
-  customSyntax: "postcss-scss",
+  "overrides": [
+    {
+      files: ["**/*.scss"],
+      customSyntax: "postcss-scss",
+    },
+  ],
   "rules": {
     "at-rule-empty-line-before": ["always", {
       except: ["blockless-after-blockless", "first-nested"],
