@@ -24,7 +24,12 @@ jobs:
       - attach_workspace:
           at: '.'
       - run: yarn install --immutable
-      - run: ./scripts/circle-publish-npm
+      - run:
+          command: |
+            # From https://docs.npmjs.com/trusted-publishers#circleci-configuration
+            NPM_ID_TOKEN=$(circleci run oidc get --claims '{"aud": "npm:registry.npmjs.org"}')
+            export NPM_ID_TOKEN
+            ./scripts/circle-publish-npm
 
 workflows:
   verify_deploy:
