@@ -1,4 +1,8 @@
-version: 2
+version: 2.1
+
+orbs:
+  node: circleci/node@7.2.1
+
 jobs:
   verify:
     docker:
@@ -15,13 +19,14 @@ jobs:
       - image: cimg/openjdk:24.0-browsers
     steps:
       - checkout
+      - node/install:
+          node-version: '25.8.1'
       - attach_workspace:
           at: '.'
       - run: yarn install --immutable
       - run: ./scripts/circle-publish-npm
 
 workflows:
-  version: 2
   verify_deploy:
     jobs:
       - verify:
