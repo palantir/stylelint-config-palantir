@@ -3,6 +3,7 @@
 [![CircleCI](https://circleci.com/gh/palantir/stylelint-config-palantir.svg?style=shield&circle-token=f4447e3c4df0f0edee55b1f1823f07bb43c94604)](https://circleci.com/gh/palantir/stylelint-config-palantir)
 [![npm version](https://badge.fury.io/js/stylelint-config-palantir.svg)](https://badge.fury.io/js/stylelint-config-palantir)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Autorelease](https://img.shields.io/badge/Perform%20an-Autorelease-success.svg)](https://autorelease3.general.dmz.palantir.tech/repos/palantir/stylelint-config-palantir)
 
 This repository contains Palantir's standard configuration for [Stylelint](https://github.com/stylelint/stylelint), our preferred stylesheet linter. These rules enforce 4-space indentation, comfortable whitespace, and property ordering that mimics the CSS box model. Properly formatted CSS looks like this (blank lines optional):
 
@@ -79,14 +80,7 @@ const { namingPattern } = require("stylelint-config-palantir");
 
 ### Maintenance
 
-To release this package:
-1. Bump the version in `package.json` by opening a new PR to the `master` branch.
-1. Click on the `Releases` link at the top of the repository's homepage.
-1. Click on the "Draft a new release button".
-1. Create a new tag matching the version in `package.json`.
-1. Click on "Generate release notes" to list the latest commits that will be part of the release.
-1. Check the "Set as the latest release" checkbox.
-1. Publish the release.
+To release this package you can click on the "Perform an Autorelease" badge at the top of this README.
 
 ### FAQ
 
