@@ -1,3 +1,7 @@
+<p align="right">
+<a href="https://autorelease.general.dmz.palantir.tech/palantir/stylelint-config-palantir"><img src="https://img.shields.io/badge/Perform%20an-Autorelease-success.svg" alt="Autorelease"></a>
+</p>
+
 # stylelint-config-palantir
 
 [![CircleCI](https://circleci.com/gh/palantir/stylelint-config-palantir.svg?style=shield&circle-token=f4447e3c4df0f0edee55b1f1823f07bb43c94604)](https://circleci.com/gh/palantir/stylelint-config-palantir)
